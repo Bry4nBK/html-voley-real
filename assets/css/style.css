@@ -1,0 +1,11 @@
+body{
+    background-color: aliceblue;
+    background: linear-gradient(to bottom, #7fa6d1, #c8d2d6); 
+    height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
