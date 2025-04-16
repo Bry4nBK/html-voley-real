@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,104 +8,106 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
+
 <body>
     <!-- Barra de navegación simplificada -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <i class="bi bi-volleyball"></i> torneo de sel
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-              
-                <a class="nav-link fw-semibold text-white d-flex align-items-center" href="index.html">
-                    <i class="bi bi-person-lines-fill me-2 fs-5"></i> Jugadores
-                  </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold text-white d-flex align-items-center" href="puntos.html">
-                    <i class="bi bi-trophy me-2 fs-5"></i> Top Jugador
-                  </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semibold text-white d-flex align-items-center" href="perfil.html">
-                  <i class="bi bi-card-list me-2 fs-5"></i> Perdil
-                </a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="fechas.html">
+                <i class="bi bi-volleyball"></i> <h3>torneo dee sel</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="fechas.html">
+                            <i class="bi bi-calendar me-2 fs-5"></i> fechas
+                        </a>
+                      
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="puntos.html">
+                            <i class="bi bi-trophy me-2 fs-5"></i> Top equipos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="perfil.html">
+                            <i class="bi bi-card-list me-2 fs-5"></i> Perdil
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <!-- Contenido principal - Top 3 Jugadores -->
     <main class="container my-5">
-        <h1 class="text-center mb-5">Top 3 Jugadores del Torneo</h1>
-        
+        <h1 class="text-center mb-5">TOP 3 EQUIPOS DEL TORNEO </h1>
+
         <div class="row justify-content-center">
             <!-- Segundo lugar -->
-            <div class="col-md-3 mb-4 order-md-1 order-2" >
+            <div class="col-md-3 mb-4 order-md-1 order-2">
                 <div class="card top-card silver">
                     <div class="card-header text-center" style="background: linear-gradient(135deg, #cecdc9, #6e6d6a);">
-                        <span class="badge bg-secondary position-absolute top-0 start-50 translate-middle">#2</span>
+                        <span class="badge bg-secondary text-white position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">
+                            #2
+                          </span>
                         <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
 
                     </div>
                     <div class="card-body text-center">
+                        
                         <h4 class="card-title">Ana Rodríguez</h4>
-                        <p class="card-text">25 años</p>
+                        
                         <div class="stats">
                             <span class="badge bg-info">Puntos: 2380</span>
                             <span class="badge bg-success">Victorias: 26/30</span>
                         </div>
-                        <a href="perfil.html" class="btn btn-outline-secondary mt-3">Ver Perfil</a>
+                        <a href="perfil.html" class="btn btn-outline-secondary mt-3">Ver equipo</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- Primer lugar (más destacado) -->
             <div class="col-md-4 mb-4 order-md-2 order-1">
                 <div class="card top-card gold">
-                    <div class="card-header text-center" style="background: linear-gradient(135deg, #ffe066, #dfbf0a);"
-
-
-                    >
-                        <span class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle">#1</span>
+                    <div class="card-header text-center" style="background: linear-gradient(135deg, #ffe066, #dfbf0a);">
+                        <span
+                        class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#1</span>
                         <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
 
                     </div>
                     <div class="card-body text-center">
                         <h3 class="card-title">Carlos Martínez</h3>
-                        <p class="card-text"> 28 años</p>
                         <div class="stats">
                             <span class="badge bg-info">Puntos: 2450</span>
                             <span class="badge bg-success">Victorias: 28/32</span>
                         </div>
-                        <a href="perfil.html" class="btn btn-warning mt-3">Perfil</a>
+                        <a href="perfil.html" class="btn btn-warning mt-3">ver equipo</a>
                     </div>
-                    
+
                 </div>
             </div>
-            
+
             <!-- Tercer lugar -->
             <div class="col-md-3 mb-4 order-md-3 order-3">
                 <div class="card top-card bronze">
                     <div class="card-header text-center" style="background: linear-gradient(135deg, #bd8f33, #9b5b24);">
-                        <span class="badge bg-danger position-absolute top-0 start-50 translate-middle">#3</span>
+                        <span class="badge bg-danger position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#3</span>
                         <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
 
                     </div>
                     <div class="card-body text-center">
                         <h4 class="card-title">Luis Fernández</h4>
-                        <p class="card-text"> 30 años</p>
+                        
                         <div class="stats">
                             <span class="badge bg-info">Puntos: 2310</span>
                             <span class="badge bg-success">Victorias: 29/35</span>
@@ -114,10 +117,10 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Lista de los siguientes 7 jugadores -->
         <section class="mt-5">
-            <h2 class="text-center mb-4">TOP JUGADORES</h2>
+            <h2 class="text-center mb-4">TOP EQUIPOS</h2>
             <div class="table-responsive">
                 <table class="table table-hover align-middle">
                     <thead class="table-dark">
@@ -136,99 +139,36 @@
                             <td class="fw-bold">4°</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;" alt="Jugador 1">
+                                    <img src="assets/img/user.png" class="rounded-circle"
+                                        style="width: 40px; height: 40px; object-fit: cover;" alt="Jugador 1">
                                     <span>Tilin</span>
                                 </div>
                             </td>
                             <td class="text-center fw-bold text-primary">50</td>
                             <td class="text-center">8</td>
                             <td class="text-center fw-bold text-success">24</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
+                            <td><a href="equipos.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
                         </tr>
-                        
+
                         <!-- Jugador 2 -->
                         <tr>
                             <td class="fw-bold">5°</td>
                             <td>
                                 <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 2">
+                                    <img src="assets/img/user.png" class="rounded-circle"
+                                        style="width: 40px; height: 40px;" alt="Jugador 2">
                                     <span>Tolon</span>
                                 </div>
                             </td>
                             <td class="text-center fw-bold text-primary">45</td>
                             <td class="text-center">7</td>
                             <td class="text-center fw-bold text-success">20</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
+                            <td><a href="equipos.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
                         </tr>
-                        
+
                         <!-- Jugador 3 -->
-                        <tr>
-                            <td class="fw-bold">6°</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 3">
-                                    <span>Player3</span>
-                                </div>
-                            </td>
-                            <td class="text-center fw-bold text-primary">40</td>
-                            <td class="text-center">6</td>
-                            <td class="text-center fw-bold text-success">18</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold">7°</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 2">
-                                    <span>Tolon</span>
-                                </div>
-                            </td>
-                            <td class="text-center fw-bold text-primary">45</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center fw-bold text-success">20</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold">8°</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 2">
-                                    <span>Tolon</span>
-                                </div>
-                            </td>
-                            <td class="text-center fw-bold text-primary">45</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center fw-bold text-success">20</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold">9°</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 2">
-                                    <span>Tolon</span>
-                                </div>
-                            </td>
-                            <td class="text-center fw-bold text-primary">45</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center fw-bold text-success">20</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold">10°</td>
-                            <td>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="assets/img/user.png" class="rounded-circle" style="width: 40px; height: 40px;" alt="Jugador 2">
-                                    <span>Tolon</span>
-                                </div>
-                            </td>
-                            <td class="text-center fw-bold text-primary">45</td>
-                            <td class="text-center">7</td>
-                            <td class="text-center fw-bold text-success">20</td>
-                            <td><a href="perfil.html" class="btn btn-sm btn-primary w-100">Ver</a></td>
-                        </tr>
-                        
-                        <!-- Más jugadores... -->
+
+
                     </tbody>
                 </table>
             </div>
@@ -236,22 +176,25 @@
     </main>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <!-- Columna izquierda (logo y texto) -->
+                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <h5><i class="bi bi-volleyball"></i> Torneo de Vóley 2023</h5>
-                    <p class="mb-0">El mejor torneo de voley</p>
+                    
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white me-2"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
-
-                    <!-- <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a> -->
-                    <a href="#" class="text-white me-2"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-youtube" style="font-size: 2rem;"></i></a>
+                
+                <!-- Columna derecha (íconos) -->
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <a href="https://www.facebook.com/exa.voley/" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/exavoley/" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+                   
                 </div>
             </div>
+            
             <hr>
+            
             <div class="text-center">
                 <small>© 2023 Torneo de Vóley - Todos los derechos reservados</small>
             </div>
