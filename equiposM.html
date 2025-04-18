@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="assets/css/topEquiposM.css">
+    <link rel="stylesheet" href="assets/css/equiposM.css">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
@@ -54,95 +54,76 @@
             </div>
         </div>
     </nav>
-    
-    <div class="main-wrapper d-flex flex-column justify-content-center align-items-center text-center mt-5">
-        <div class="d-flex flex-column gap-3 w-100 text-center" style="max-width: 300px;">
-          <a href="topEquiposH.html" class="btn btn-hombres">Ver Equipos Hombres</a>
-        </div>
-      </div>
-          
-
     <!-- Contenido principal - Top 3 Jugadores -->
     <main class="container my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                <span class="d-inline-block text-white py-2 px-4 rounded shadow" style="background-color: #e91e63;">
+                    Equipos Femeninos
+                </span>
+            </h2>
+        </div>
 
-        
-
-        <h1 class="text-center mb-5">TOP 3 EQUIPOS DEL TORNEO </h1>
 
         <div class="row justify-content-center">
-            <!-- Segundo lugar -->
-            <div class="col-md-3 mb-4 order-md-1 order-2">
-                <div class="card top-card silver">
-                    <div class="card-header text-center" style="background: linear-gradient(135deg, #cecdc9, #6e6d6a);">
-                        <span class="badge bg-secondary text-white position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">
-                            #2
-                          </span>
-                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
-
+            <div class="col-md-8 col-lg-6">
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <!-- Cabecera con fondo oscuro -->
+                    <div class="bg-dark text-white py-3 text-center">
+                        <h2 class="mb-0 fw-light"> Nombre equipo</h2>
                     </div>
-                    <div class="card-body text-center">
-                        
-                        <h4 class="card-title">Ana Rodríguez</h4>
-                        
-                        <div class="stats">
-                            <span class="badge bg-info">Puntos: 2380</span>
-                            <span class="badge bg-success">Victorias: 26/30</span>
+
+                    <div class="card-body p-4">
+                        <!-- Foto y nombre -->
+                        <div class="text-center mb-4">
+                            <img src="assets/img/user.png"
+                                class="rounded-circle border border-4 border-femenino shadow-sm" alt="Foto del jugador"
+                                width="150" height="150">
+                            <h2 class="mt-3 mb-1">ESTADISTICAS</h2>
+
                         </div>
-                        <a href="perfil.html" class="btn btn-outline-secondary mt-3">Ver equipo</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Primer lugar (más destacado) -->
-            <div class="col-md-4 mb-4 order-md-2 order-1">
-                <div class="card top-card gold">
-                    <div class="card-header text-center" style="background: linear-gradient(135deg, #ffe066, #dfbf0a);">
-                        <span
-                        class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#1</span>
-                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
-
-                    </div>
-                    <div class="card-body text-center">
-                        <h3 class="card-title">Carlos Martínez</h3>
-                        <div class="stats">
-                            <span class="badge bg-info">Puntos: 2450</span>
-                            <span class="badge bg-success">Victorias: 28/32</span>
+                        <!-- Stats en 3 columnas -->
+                        <div class="row g-3 mb-4 text-center">
+                            <div class="col-md-4">
+                                <div class="p-3 rounded bg-light">
+                                    <h5 class="text-primary mb-1">20</h5>
+                                    <small class="text-uppercase text-muted">Puntos</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 rounded bg-light">
+                                    <h5 class="text-success mb-1">58</h5>
+                                    <small class="text-uppercase text-muted">Victorias</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 rounded bg-light">
+                                    <h5 class="text-warning mb-1">12</h5>
+                                    <small class="text-uppercase text-muted">Partidos</small>
+                                </div>
+                            </div>
                         </div>
-                        <a href="perfil.html" class="btn btn-warning mt-3">ver equipo</a>
-                    </div>
 
-                </div>
-            </div>
-
-            <!-- Tercer lugar -->
-            <div class="col-md-3 mb-4 order-md-3 order-3">
-                <div class="card top-card bronze">
-                    <div class="card-header text-center" style="background: linear-gradient(135deg, #bd8f33, #9b5b24);">
-                        <span class="badge bg-danger position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#3</span>
-                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
-
-                    </div>
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Luis Fernández</h4>
-                        
-                        <div class="stats">
-                            <span class="badge bg-info">Puntos: 2310</span>
-                            <span class="badge bg-success">Victorias: 29/35</span>
-                        </div>
-                        <a href="perfil.html" class="btn btn-outline-danger mt-3">Ver Perfil</a>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <!-- Lista de los siguientes 7 jugadores -->
         <section class="mt-5">
+
             <div class="container py-4">
-                <h2 class="text-center mb-4 titulo-femenino">Equipos Femeninos</h2>
-                <div class="row" id="femaleCardsContainer"></div>
-              </div>
+                <h2 class="text-center mb-4 titulo-masculino">Equipos Masculinos</h2>
+                <div class="container my-5">
+                    <div class="row" id="female-teams-container">
+                        <!-- Tarjetas generadas con JS -->
+                    </div>
+                </div>
+
         </section>
-            
     </main>
 
     <!-- Pie de página -->
@@ -173,7 +154,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/topEquiposM.js"></script>
+    <script src="assets/js/equiposM.js"></script>
 
 </body>
 

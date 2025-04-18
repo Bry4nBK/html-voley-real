@@ -1,140 +1,69 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneo de Vóley - Inicio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Iconos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <title>Carrusel Infinito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            margin: 2rem 0;
+        }
+        .infinite-carousel {
+            display: flex;
+            width: calc(200px * 12);
+            animation: scroll 30s linear infinite;
+        }
+        .infinite-carousel:hover {
+            animation-play-state: paused;
+        }
+        .infinite-carousel img {
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+        .infinite-carousel img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-200px * 6)); }
+        }
+        
+        /* Media query corregida (sin llave extra) */
+        @media (max-width: 768px) {
+            .infinite-carousel img {
+                width: 150px;
+                height: 80px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Barra de navegación simplificada -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="fechas.html">
-                <i class="bi bi-volleyball"></i> <h3>torneo dee sel</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="fechas.html">
-                            <i class="bi bi-calendar me-2 fs-5"></i> fechas
-                        </a>
-                      
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="puntos.html">
-                            <i class="bi bi-trophy me-2 fs-5"></i> Top equipos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="perfil.html">
-                            <i class="bi bi-card-list me-2 fs-5"></i> Perdil
-                        </a>
-                    </li>
-                   
-                </ul>
-            </div>
+    <section class="carousel-container">
+        <div class="infinite-carousel">
+             Imágenes originales -->
+            <!-- <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
+            <img src="assets/img/AT.png" alt="AT" class="img-fluid">
+            <img src="assets/img/kpm.png" alt="KPM" class="img-fluid">
+            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
+            <img src="assets/img/MEC.png" alt="MEC" class="img-fluid">
+            <img src="assets/img/PF.png" alt="PF" class="img-fluid"> -->
+            <!-- Duplicadas para efecto infinito -->
+            <!-- <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
+            <img src="assets/img/AT.png" alt="AT" class="img-fluid">
+            <img src="assets/img/kpm.png" alt="KPM" class="img-fluid">
+            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
+            <img src="assets/img/MEC.png" alt="MEC" class="img-fluid">
+            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
         </div>
-    </nav>
+    </section>
 
-    <div class="slider">
-        <div class="slider-track">
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="assets/img/BERSERK 1.jpg" alt="">
-            </div>
-        </div>
-    </div>
-
-    <!-- Contenido principal - Top 3 Jugadores -->
-        <!-- Lista de los siguientes 7 jugadores -->
-        <section class="mt-5">
-            <h2 class="text-center mb-4">EQUIPO</h2>
-            <div class="container my-4">
-                <div id="male-teams" class="row g-3 justify-content-center"></div>
-              </div>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container">
-            <div class="row">
-                <!-- Columna izquierda (logo y texto) -->
-                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5><i class="bi bi-volleyball"></i> Torneo de Vóley 2023</h5>
-                    
-                </div>
-                
-                <!-- Columna derecha (íconos) -->
-                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-                    <a href="https://www.facebook.com/exa.voley/" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
-                    <a href="https://www.instagram.com/exavoley/" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
-                   
-                </div>
-            </div>
-            
-            <hr>
-            
-            <div class="text-center">
-                <small>© 2023 Torneo de Vóley - Todos los derechos reservados</small>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/topEquiposM.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html>
+</html>  -->

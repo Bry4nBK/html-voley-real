@@ -1,0 +1,49 @@
+.card-female {
+    background-color: #fde4ec;
+    border: 2px solid #e91e63;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    margin: 10px auto;
+    color: #000;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    height: 270px;
+    width: 230px;
+  }
+  
+  .card-female img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e91e63;
+    margin-bottom: 10px;
+  }
+  
+  .card-female p {
+    margin: 5px 0;
+  }
+  
+  .card-female .wins {
+    color: #d81b60;
+  }
+  
+  .card-female .played {
+    color: #40054b; /* Morado */
+  }
+  
+  .card-female:hover {
+    transform: scale(1.03);
+  }
+  
+  @media (min-width: 768px) {
+    .card-female {
+      width: 250px;
+      height: 300px;
+    }
+  }
+  
+  .border-femenino {
+    border-color: #e83e8c !important;
+  }
+  
