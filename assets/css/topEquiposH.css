@@ -1,0 +1,79 @@
+
+body {
+  background-color: #e5edf3;
+}
+
+
+.fixed-card-male {
+  width: 100%;
+  max-width: 280px;
+  height: 330px;
+  background-color: #e0f0ff;
+  border: 2px solid #007bff;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  color: black;
+}
+
+.card-text {
+  font-weight: bold;
+}
+
+.card-img-top {
+  border: 3px solid #007bff;
+}
+
+.card-text.wins {
+  color: green;
+}
+
+.card-text.played {
+  color: #b87333;
+}
+
+.titulo-masculino {
+  font-size: 2rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.ver-equipo-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.ver-equipo-btn:hover {
+  background-color: #0056b3;
+}
+
+/* En celular: dos columnas */
+@media (max-width: 576px) {
+  #maleCardsContainer .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.btn-mujeres {
+  background-color: #e91e63;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mujeres:hover {
+  background-color: #c2185b;
+}

@@ -1,0 +1,83 @@
+body {
+    background-color: #e5edf3;
+}
+
+
+.fixed-card-female {
+    width: 100%;
+    max-width: 280px;
+    height: 330px;
+    background-color: #ffe6f0;
+    border: 2px solid #e83e8c;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .card-text {
+    font-weight: bold;
+  }
+  
+  .card-img-top {
+    border: 3px solid #e83e8c;
+  }
+  
+  .card-text.wins {
+    color: green;
+  }
+  
+  .card-text.played {
+    color: #b87333; /* cobre */
+  }
+  
+  .titulo-femenino {
+    font-size: 2rem;
+    color: #e83e8c;
+    font-weight: bold;
+  }
+  
+  .ver-equipo-btn {
+    background-color: #e83e8c;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
+  .ver-equipo-btn:hover {
+    background-color: #710038;
+  }
+  
+  /* En celular: dos columnas */
+  @media (max-width: 576px) {
+    #femaleCardsContainer .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  .btn-hombres {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-hombres:hover {
+    background-color: #217dbb;
+  }
+  
+  .main-wrapper {
+    margin-top: 60px; /* Ajusta este valor como prefieras */
+  }
+  

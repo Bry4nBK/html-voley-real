@@ -1,0 +1,56 @@
+body {
+    background-color: #e5edf3;
+}
+
+
+.card-female {
+  background-color: #ffe6f0;
+  border: 3px solid #e83e8c;
+}
+.card-male {
+  background-color: #e0f7ff;
+  border: 3px solid #0d6efd;
+}
+
+@media (max-width: 576px) {
+  .fixed-card {
+    width: 90vw; /* ocupa el 90% del ancho de la pantalla */
+    max-width: 300px; /* pero no más de 300px */
+    height: 360px; /* altura fija */
+  }
+
+  #calendar {
+    justify-content: center;
+  }
+}
+.fixed-card {
+  width: 300px; /* ancho fijo en PC y móvil */
+  height: 360px; /* altura fija */
+}
+
+@media (max-width: 576px) {
+  .fixed-card {
+    width: 90vw; /* 90% del ancho de pantalla */
+    max-width: 300px; /* sin pasarse de 300px */
+  }
+}
+
+.small-image {
+  width: 110px; /* Tamaño reducido */
+  height: auto;
+  margin: 15px; /* Separación de 5px alrededor */
+}
+
+/* @media (max-width: 576px) {
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+} */
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }

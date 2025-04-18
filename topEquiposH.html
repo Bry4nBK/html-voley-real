@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo de Vóley - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="assets/css/topEquiposH.css">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Barra de navegación simplificada -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="fechas.html">
+                <i class="bi bi-volleyball"></i> <h3>torneo dee sel</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="fechas.html">
+                            <i class="bi bi-calendar me-2 fs-5"></i> fechas
+                        </a>
+                      
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="topEquiposM.html">
+                            <i class="bi bi-trophy me-2 fs-5"></i> Top equipos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="perfil.html">
+                            <i class="bi bi-card-list me-2 fs-5"></i> Perdil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+						<a class="btn btn-success fw-semibold text-white d-flex align-items-center" 
+						   href="https://app.membrezia.com/portal/club-exa-voley" 
+						   target="_blank" 
+						   rel="noopener noreferrer">
+							<i class="bi bi-currency-dollar me-2 fs-5"></i> Pago Mensualidad
+						</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-wrapper d-flex flex-column justify-content-center align-items-center text-center mt-5">
+        <div class="d-flex flex-column gap-3 w-100 text-center" style="max-width: 300px;">
+          <a href="topEquiposM.html" class="btn btn-mujeres">Ver Equipos Mujeres</a>
+        </div>
+      </div>
+
+    <!-- Contenido principal - Top 3 Jugadores -->
+    <main class="container my-5">
+        <h1 class="text-center mb-5">TOP 3 EQUIPOS DEL TORNEO </h1>
+
+        <div class="row justify-content-center">
+            <!-- Segundo lugar -->
+            <div class="col-md-3 mb-4 order-md-1 order-2">
+                <div class="card top-card silver">
+                    <div class="card-header text-center" style="background: linear-gradient(135deg, #cecdc9, #6e6d6a);">
+                        <span class="badge bg-secondary text-white position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">
+                            #2
+                          </span>
+                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
+
+                    </div>
+                    <div class="card-body text-center">
+                        
+                        <h4 class="card-title">Ana Rodríguez</h4>
+                        
+                        <div class="stats">
+                            <span class="badge bg-info">Puntos: 2380</span>
+                            <span class="badge bg-success">Victorias: 26/30</span>
+                        </div>
+                        <a href="perfil.html" class="btn btn-outline-secondary mt-3">Ver equipo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primer lugar (más destacado) -->
+            <div class="col-md-4 mb-4 order-md-2 order-1">
+                <div class="card top-card gold">
+                    <div class="card-header text-center" style="background: linear-gradient(135deg, #ffe066, #dfbf0a);">
+                        <span
+                        class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#1</span>
+                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
+
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Carlos Martínez</h3>
+                        <div class="stats">
+                            <span class="badge bg-info">Puntos: 2450</span>
+                            <span class="badge bg-success">Victorias: 28/32</span>
+                        </div>
+                        <a href="perfil.html" class="btn btn-warning mt-3">ver equipo</a>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Tercer lugar -->
+            <div class="col-md-3 mb-4 order-md-3 order-3">
+                <div class="card top-card bronze">
+                    <div class="card-header text-center" style="background: linear-gradient(135deg, #bd8f33, #9b5b24);">
+                        <span class="badge bg-danger position-absolute top-0 start-50 translate-middle" style="font-size: 1.5rem;">#3</span>
+                        <img src="assets/img/user.png" class="rounded-circle mt-3 img-fluid w-50" alt="Jugador 2">
+
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Luis Fernández</h4>
+                        
+                        <div class="stats">
+                            <span class="badge bg-info">Puntos: 2310</span>
+                            <span class="badge bg-success">Victorias: 29/35</span>
+                        </div>
+                        <a href="perfil.html" class="btn btn-outline-danger mt-3">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de los siguientes 7 jugadores -->
+        <section class="mt-5">
+  
+            <div class="container py-4">
+                <h2 class="text-center mb-4 titulo-masculino">Equipos Masculinos</h2>
+                <div class="row" id="maleCardsContainer"></div>
+              </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda (logo y texto) -->
+                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5><i class="bi bi-volleyball"></i> EXA Voley</h5>
+                    
+                </div>
+                
+                <!-- Columna derecha (íconos) -->
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <a href="https://www.facebook.com/exa.voley/" target="_blank" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+                    <a href="https://www.instagram.com/exavoley/" target="_blank" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+                   
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="text-center">
+                <small>© EXA Voley - Todos los derechos reservados</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/topEquiposH.js"></script>
+
+</body>
+
+</html>
