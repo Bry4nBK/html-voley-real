@@ -1,5 +1,5 @@
 body {
-    background-color: #e5edf3;
+  background-color: #e5edf3;
 }
 
 .card-female {
@@ -14,8 +14,8 @@ body {
 @media (max-width: 576px) {
   .fixed-card {
     width: 90vw; /* ocupa el 90% del ancho de la pantalla */
-    max-width: 300px; /* pero no más de 300px */
-    height: 360px; /* altura fija */
+    max-width: 400px; /* pero no más de 300px */
+    height: 460px; /* altura fija */
   }
 
   #calendar {
@@ -23,62 +23,67 @@ body {
   }
 }
 .fixed-card {
-  width: 300px; /* ancho fijo en PC y móvil */
-  height: 360px; /* altura fija */
+  width: 400px; /* ancho fijo en PC y móvil */
+  height: 460px; /* altura fija */
 }
 
 @media (max-width: 576px) {
   .fixed-card {
     width: 90vw; /* 90% del ancho de pantalla */
-    max-width: 300px; /* sin pasarse de 300px */
+    max-width: 400px; /* sin pasarse de 300px */
   }
 }
 
 .small-image {
-  width: 110px; 
+  width: 110px;
   height: auto;
-  margin: 15px; 
+  margin: 15px;
 }
 
 .image-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .carousel-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin: 2rem 0;
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 2rem 0;
 }
 .infinite-carousel {
-    display: flex;
-    width: calc(200px * 12);
-    animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(200px * 12);
+  animation: scroll 60s linear infinite;
 }
 .infinite-carousel:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 .infinite-carousel img {
-    width: 300px;
-    height: 100px;
-    object-fit: contain;
-    margin: 0 15px;
-    transition: transform 0.3s;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 15px;
+  transition: transform 0.3s;
 }
 .infinite-carousel img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * 6)); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 6));
+  }
 }
+
 
 
 /* @media (max-width: 768px) {
-    .infinite-carousel img {
-      width: 300px;
-      height: 100px;
-    }
+  .infinite-carousel img {
+    width: 300px;
+    height: 100px;
+  }
 } */

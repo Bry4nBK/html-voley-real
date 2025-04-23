@@ -43,7 +43,6 @@ const femaleTeams = [
     }
   ];
   
-  
   const container = document.getElementById("female-teams-container");
 
   femaleTeams.forEach((player) => {

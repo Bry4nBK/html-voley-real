@@ -2,125 +2,153 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneo de Vóley - Inicio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="assets/css/fechas.css">
-    <!-- Iconos de Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo de Vóley - Inicio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/fechas.css">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- Barra de navegación simplificada -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="fechas.html">
-                <i class="bi bi-volleyball"></i> <h2>torneo de Voleibol</h2>
+  <!-- Barra de navegación simplificada -->
+  <!-- Barra de navegación simplificada -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="fechas.html">
+        <i class="bi bi-volleyball"></i>
+        <h2>torneo de Voleibol</h2>
+      </a>
+
+      <img src="assets/img/EXA2.png" alt="EXA Logo" class="img-fluid me-1" style="max-width: 50px;">
+      <img src="assets/img/penaflor.png" alt="Peñaflor Logo" class="img-fluid" style="max-width: 50px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-white d-flex align-items-center" href="fechas.html">
+              <i class="bi bi-calendar me-2 fs-5"></i> fechas
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          </li>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="fechas.html">
-                            <i class="bi bi-calendar me-2 fs-5"></i> fechas
-                        </a>
-                      
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="topEquiposM.html">
-                            <i class="bi bi-trophy me-2 fs-5"></i> Top equipos
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link fw-semibold text-white d-flex align-items-center" href="perfil.html">
-                            <i class="bi bi-card-list me-2 fs-5"></i> Perdil
-                        </a>
-                    </li> -->
-                    <li class="nav-item">
-						<a class="btn btn-success fw-semibold text-white d-flex align-items-center" 
-						   href="https://app.membrezia.com/portal/club-exa-voley" 
-						   target="_blank" 
-						   rel="noopener noreferrer">
-							<i class="bi bi-currency-dollar me-2 fs-5"></i> Pago Mensualidad
-						</a>
-					</li>
-                </ul>
-            </div>
+          <li class="nav-item">
+            <a class="btn btn-success fw-semibold text-white d-flex align-items-center"
+              href="https://app.membrezia.com/portal/club-exa-voley" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-currency-dollar me-2 fs-5"></i> Pago Mensualidad
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4 mb-4">
+    <div class="image-wrapper">
+      <img src="assets/img/10-captura.jpg" alt="ANT" class="img-fluid" style="border-radius: 30%;">
+
+    </div>
+  </div>
+
+  <!-- 
+        <img 
+        src="assets/img/EXA2.png" 
+        alt="EXA Logo" 
+        class="img-fluid me-1" 
+        style="max-width: 50px;"
+      >
+      <img 
+        src="assets/img/penaflor.png" 
+        alt="Peñaflor Logo" 
+        class="img-fluid" 
+        style="max-width: 50px;"
+      > -->
+
+
+  <!-- Calendario con separación por género -->
+  <div class="container py-6">
+    <h2 class="text-center mb-4 py-3 px-4 bg-primary text-white rounded shadow">
+      📅 Calendario de Partidos
+    </h2>
+
+    <!-- Contenedor para los partidos femeninos y masculinos -->
+    <div class="row">
+      <!-- Femenino -->
+      <div class="col-12 col-md-6">
+        <h3 class="text-center mb-4"></h3>
+        <div id="calendar-female" class="row g-3"></div>
+      </div>
+      <!-- Masculino -->
+      <div class="col-12 col-md-6">
+        <h3 class="text-center mb-4"></h3>
+        <div id="calendar-male" class="row g-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="carousel-container">
+    <div class="infinite-carousel">
+      <a href="https://www.instagram.com/colegio_antimanque/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/aguastempo/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/AT.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/kinepro_mas/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/kpm.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/gimnasiospowerfitness/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/PF.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://mecsport.cl/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/MEC.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/colegio_antimanque/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/aguastempo/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/AT.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/kinepro_mas/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/kpm.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://www.instagram.com/gimnasiospowerfitness/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/PF.png" alt="ANT" class="img-fluid">
+      </a>
+      <a href="https://mecsport.cl/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/MEC.png" alt="ANT" class="img-fluid">
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <h5><i class="bi bi-volleyball"></i> EXA Voley</h5>
         </div>
-    </nav>
-
-    <div class="container mt-4 mb-4">
-        <div class="image-wrapper">
-          <img src="assets/img/BERSERK 1.jpg" class="img-fluid rounded shadow small-image" alt="Imagen 1">
-          
+        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+          <a href="https://www.facebook.com/exa.voley/" target="_blank" class="text-white me-3"><i
+              class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+          <a href="https://www.instagram.com/exavoley/" target="_blank" class="text-white me-3"><i
+              class="bi bi-instagram" style="font-size: 2rem;"></i></a>
         </div>
       </div>
-      
-      <div class="container py-6">
-        <h2 class="text-center mb-4 py-3 px-4 bg-primary text-white rounded shadow">
-            📅 Calendario de Partidos
-          </h2>
-          
-        <!-- añade justify-content-center para centrar en móvil -->
-        <div id="calendar" class="row row-cols-1 row-cols-sm-2 g-3 justify-content-center"></div>
+      <hr>
+      <div class="text-center">
+        <small>© EXA Voley - Todos los derechos reservados</small>
       </div>
+    </div>
+  </footer>
 
-
-      <section class="carousel-container">
-        <div class="infinite-carousel">
-            <!-- Imágenes originales -->
-            <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
-            <img src="assets/img/AT.png" alt="AT" class="img-fluid">
-            <img src="assets/img/kpm.png" alt="KPM" class="img-fluid">
-            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
-            <img src="assets/img/MEC.png" alt="MEC" class="img-fluid">
-            <!-- Duplicada -->
-            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
-            <!-- Duplicadas para efecto infinito -->
-            <img src="assets/img/ANT.png" alt="ANT" class="img-fluid">
-            <img src="assets/img/AT.png" alt="AT" class="img-fluid">
-            <img src="assets/img/kpm.png" alt="KPM" class="img-fluid">
-            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
-            <img src="assets/img/MEC.png" alt="MEC" class="img-fluid">
-            <!-- Duplicada -->
-            <img src="assets/img/PF.png" alt="PF" class="img-fluid">
-        </div>
-    </section>
-
-
-      <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container">
-            <div class="row">
-                <!-- Columna izquierda (logo y texto) -->
-                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <h5><i class="bi bi-volleyball"></i> EXA Voley</h5>
-                    
-                </div>
-                
-                <!-- Columna derecha (íconos) -->
-                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
-                    <a href="https://www.facebook.com/exa.voley/" target="_blank" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
-                    <a href="https://www.instagram.com/exavoley/" target="_blank" class="text-white me-3"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
-                   
-                </div>
-            </div>
-            
-            <hr>
-            
-            <div class="text-center">
-                <small>© EXA Voley - Todos los derechos reservados</small>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/fechas.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/fechas.js"></script>
 </body>
+
 </html>

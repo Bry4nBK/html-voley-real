@@ -77,3 +77,13 @@ body {
 .btn-mujeres:hover {
   background-color: #c2185b;
 }
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+
+  font-weight: bold;
+  font-size: 2rem; /* ajústalo si quieres más o menos grande */
+}
+
+

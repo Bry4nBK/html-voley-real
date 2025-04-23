@@ -23,8 +23,8 @@ maleTeams.forEach(team => {
       style="width: 80px; height: 80px;">
     <div class="card-body">
       <h5 class="card-title">${team.name}</h5>
-      <p class="card-text wins mb-1">Partidos Ganados: ${team.wins}</p>
-      <p class="card-text played">Partidos Jugados: ${team.played}</p>
+      <p class="card-text wins mb-1">Victorias: ${team.wins}</p>
+      <p class="card-text played">Partidos: ${team.played}</p>
       <button class="ver-equipo-btn">Ver equipo</button>
     </div>
   `;
